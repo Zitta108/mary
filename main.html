@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/Users/ifunanyamaryzitta/Downloads/my portfolio/INFINITY.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About </a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-text"></div>
+            <p>Web designer</p>
+            <h1>Hi, I'm <span>MaryZitta</span><br> From Nigeria 🇳🇬</h1>
+        </div>
+    </div>
+   <!----about---->  
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"></div>
+                <img src="lt.jpg">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        As a web designer, I specialize in creating visually appealing 
+                        and user-friendly websites tailored to client needs. 
+                        I use tools like Adobe XD and Figma, along with coding languages such as HTML, CSS, and JavaScript, 
+                        to build responsive and modern websites. 
+                        My focus is on delivering sites that look great on all devices, 
+                        run smoothly, and are optimized for search engines. 
+                        I enjoy working with teams to bring designs to life, 
+                        ensuring a seamless user experience while staying 
+                        on top of the latest web design trends.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>IT</span><br>Designing Web/App interfaces </li>
+                            <li><span>Web Development</span><br> Web app Development </li>
+                            <li><span>App Development</span><br>Building Android/ios apps </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab"  id="Experience">
+                        <ul>
+                            <li><span>2023-current</span><br>Web design institute </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--portfolio-->
+    <div id="Portfolio">
+        <div class="container"></div>
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work 1.jpg" alt="">
+                <div class="layer">
+                    <h3>Modern office</h3>
+                    <p>A clean, modern office workspace with multiple computer screens displaying lines of code,
+                         likely related to software development or programming. 
+                         The setup includes a desktop, laptop, and a large monitor, 
+                         indicating a professional environment for developers or coders.
+                         The space looks bright and minimalistic, 
+                         with plenty of natural light coming through large windows.</p>
+                         <a href="#"><i class='bx bx-link-external'></i>></a>
+                         
+                </div>
+            </div>
+            <div class="work">
+                <img src="work 2.jpg" alt="">
+                <div class="layer">
+                    <h3>Social media app</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it fom playstore.</p>
+                        <a href="#"><i class='bx bx-link-external'></i>></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.jpg" alt="">
+                <div class="layer">
+                    <h3>Digital ecosystem </h3>
+                    <p>Tools to help create websites with in-built designs</p>
+                        <a href="#"><i class='bx bx-link-external'></i>></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--contact section-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    
+                        <h1 class="subtitle">Contact me</h1>
+                        <p><i class='bx bx-send' ></i>contact@example.com</p>
+                        <p><i class='bx bxs-phone' ></i>0123456789</p>
+                        <div class="social-icons">
+                            <a href="twitter"><i class='bx bxl-twitter' ></i></a>
+                            <a href="linkedn"><i class='bx bxl-linkedin' ></i></a>
+                        </div>
+                        <div class="contact-right">
+                            <form>
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="Message" id="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks ){
+                tablink.classList.remove("active-link");
+            }
+            
+            for(tabcontent of tabcontents ){ 
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+    
+    }
+    
+    </script>
+<div class="footer">
+    <p>All Rights Reserved, MaryZitta. 18-10-2024</p>
+</div>
+
+    
+  
+
+</body>
+</html>
